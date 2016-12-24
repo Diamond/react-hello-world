@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 
-// NOTE: Missing this from tutorial!
 import HelloWorld from './HelloWorld';
 
 import AddGreeter from './AddGreeter';
@@ -40,5 +39,4 @@ class HelloWorldList extends Component {
   }
 }
 
-// NOTE: Missing this from tutorial!
 export default HelloWorldList;

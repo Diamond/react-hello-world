@@ -1,0 +1,106 @@
+exports[`class HelloWorldList extends /* istanbul ignore next */_react.Component {
+  constructor(props) {
+    super(props);
+    this.state = { greetings: ['Jim', 'Sally', 'Bender'] };
+    this.addGreeting = this.addGreeting.bind(this);
+    this.removeGreeting = this.removeGreeting.bind(this);
+  }
+  renderGreetings() {
+    return this.state.greetings.map(name =>
+    /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_HelloWorld2.default, /* istanbul ignore next */{
+      key: name,
+      name: name,
+      removeGreeting: this.removeGreeting, __source: { fileName: _jsxFileName, lineNumber: 16 }, __self: this }));
+
+
+  }
+  addGreeting(newName) {
+    this.setState({ greetings: [...this.state.greetings, newName] });
+  }
+  removeGreeting(removeName) {
+    const filteredGreetings = this.state.greetings.filter(name => {
+      return name !== removeName;
+    });
+    this.setState({ greetings: filteredGreetings });
+  }
+  render() {
+    return (
+      /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ className: 'HelloWorldList', __source: { fileName: _jsxFileName, lineNumber: 34 }, __self: this },
+        /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */_AddGreeter2.default, /* istanbul ignore next */{ addGreeting: this.addGreeting, __source: { fileName: _jsxFileName, lineNumber: 35 }, __self: this }),
+        this.renderGreetings()));
+
+
+  }} renders and matches our snapshot 1`] = `
+<div
+  className="HelloWorldList">
+  <div
+    className="AddGreeter">
+    <input
+      onChange={[Function]}
+      type="text"
+      value="" />
+      
+    <button
+      onClick={[Function]}>
+      Add
+    </button>
+  </div>
+  <div
+    className="HelloWorld">
+    Hello
+     
+    Jim
+    !
+    <br />
+    <button
+      className="frenchify"
+      onClick={[Function]}>
+      Frenchify!
+    </button>
+    <br />
+    <button
+      className="remove"
+      onClick={[Function]}>
+      Remove Me!
+    </button>
+  </div>
+  <div
+    className="HelloWorld">
+    Hello
+     
+    Sally
+    !
+    <br />
+    <button
+      className="frenchify"
+      onClick={[Function]}>
+      Frenchify!
+    </button>
+    <br />
+    <button
+      className="remove"
+      onClick={[Function]}>
+      Remove Me!
+    </button>
+  </div>
+  <div
+    className="HelloWorld">
+    Hello
+     
+    Bender
+    !
+    <br />
+    <button
+      className="frenchify"
+      onClick={[Function]}>
+      Frenchify!
+    </button>
+    <br />
+    <button
+      className="remove"
+      onClick={[Function]}>
+      Remove Me!
+    </button>
+  </div>
+</div>
+`;

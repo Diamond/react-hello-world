@@ -1,0 +1,44 @@
+exports[`class HelloWorld extends /* istanbul ignore next */_react.Component {
+  constructor(props) {
+    super(props);
+    this.state = { greeting: 'Hello' };
+    this.frenchify = this.frenchify.bind(this);
+    this.removeGreeting = this.removeGreeting.bind(this);
+  }
+  frenchify() {
+    this.setState({ greeting: 'Bonjour' });
+  }
+  removeGreeting() {
+    this.props.removeGreeting(this.props.name);
+  }
+  render() {
+    return (
+      /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'div', /* istanbul ignore next */{ className: 'HelloWorld', __source: { fileName: _jsxFileName, lineNumber: 19 }, __self: this },
+        this.state.greeting, /* istanbul ignore next */' ', this.props.name, /* istanbul ignore next */'!',
+        /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'br', /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 21 }, __self: this }),
+        /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'button', /* istanbul ignore next */{ className: 'frenchify', onClick: this.frenchify, __source: { fileName: _jsxFileName, lineNumber: 22 }, __self: this }, /* istanbul ignore next */'Frenchify!'),
+        /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'br', /* istanbul ignore next */{ __source: { fileName: _jsxFileName, lineNumber: 23 }, __self: this }),
+        /* istanbul ignore next */_react2.default.createElement( /* istanbul ignore next */'button', /* istanbul ignore next */{ className: 'remove', onClick: this.removeGreeting, __source: { fileName: _jsxFileName, lineNumber: 24 }, __self: this }, /* istanbul ignore next */'Remove Me!')));
+
+
+  }} renders and matches our snapshot 1`] = `
+<div
+  className="HelloWorld">
+  Hello
+   
+  Person
+  !
+  <br />
+  <button
+    className="frenchify"
+    onClick={[Function]}>
+    Frenchify!
+  </button>
+  <br />
+  <button
+    className="remove"
+    onClick={[Function]}>
+    Remove Me!
+  </button>
+</div>
+`;
